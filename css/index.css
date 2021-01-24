@@ -62,6 +62,8 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
+
+
 p {
     line-height: 1.4;
 }
@@ -71,8 +73,35 @@ p {
     margin: 0 auto;
 }
 
-.top-content {
+/* ∎∎∎∎∎my code below ∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎ */
+.header-items{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-end;
+    margin-top:2%;
+    margin-bottom: 2%;
+    margin-right: 8%;
+  }
+  
+  .header-items .header-link-style{
+    text-decoration: none;
+    color: black;
+  }
+
+.banner-image{
+    width: 100%;
+    padding:2% 0;
+}
+
+.about-section{
+    padding: 30px;
+    border-bottom: 1px dashed black;
+}
+/* ∎∎∎∎∎my code above ∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎ */
+.top-content {
+    display: flex;  
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
@@ -104,7 +133,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,6 +141,39 @@ p {
     justify-content: center;
 }
 
+/* ∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎ */
+.color1{
+    background-color: teal;
+}
+.color2{
+    background-color: gold;
+}
+.color3{
+    background-color: cadetblue;
+}
+.color4{
+    background-color: coral;
+}
+.color5{
+    background-color: crimson;
+}
+.color6{
+    background-color: forestgreen;
+}
+.color7{
+    background-color: darkorchid;
+}
+.color8{
+    background-color: hotpink;
+}
+.color9{
+    background-color: indigo;
+}
+.color10{
+    background-color: dodgerblue;
+}
+
+/* ∎∎∎∎∎my code above ∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎ */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -124,6 +186,49 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.gallery-container{
+    height: 50%;
+    width: 46%;
+  margin: 2%;
+    border-bottom: 1px dashed black;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+
+}
+
+.gallery-button{
+    padding: 8px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.gallery-container h2{
+    margin-top: 10px;
 }
 
 footer {
